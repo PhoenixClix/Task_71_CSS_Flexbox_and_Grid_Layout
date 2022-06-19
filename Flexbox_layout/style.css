@@ -1,0 +1,91 @@
+@media only screen and (min-width: 375px) {
+  body{
+    font-size: 14px;
+  }
+
+  main{
+    width: 50%;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  img{
+    padding: 10px;
+  }
+
+  .sedan{
+    background-color: hsl(31, 77%, 52%);
+    padding: 2em;
+    border-radius: 2% 0% 0% 2%;
+  }
+
+  .suvs{
+    background-color: hsl(184, 100%, 22%);
+    padding: 2em;
+  }
+
+  .luxury{
+    background-color: hsl(179, 100%, 13%);
+    padding: 2em;
+    border-radius: 0% 2% 2% 0%
+  }
+
+  h2{
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    color: hsl(0, 0%, 95%)
+  }
+
+  p{
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  .button{
+    position: relative;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-size: 15px;
+    font-family: "Lexend Deca";
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    mix-blend-mode: screen;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+  }
+
+  .button::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    border-radius: 2.5em;
+    content: '';
+    mix-blend-mode: color-burn;
+  }
+
+  .button1:active {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+  }
+
+  .button2:active {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+  }
+
+  .button3:active {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+  }
+
+}
